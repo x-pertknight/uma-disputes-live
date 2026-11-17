@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" font-family="Helvetica, Arial, sans-serif">
+<rect width="1200" height="720" fill="white"/>
+<text x="30" y="46" font-size="30" fill="#1c1c1c" text-anchor="start" font-weight="bold">Betting lines rose from 13% to 42% of decided disputes from July</text>
+<text x="30" y="80" font-size="21" fill="#555555" text-anchor="start" font-weight="normal">By month of dispute; title compares Nov 2025 to Jun 2026 with July onward</text>
+<line x1="95" x2="1170" y1="630.0" y2="630.0" stroke="#e3e3e3"/>
+<text x="83" y="637.0" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">0</text>
+<line x1="95" x2="1170" y1="502.5" y2="502.5" stroke="#e3e3e3"/>
+<text x="83" y="509.5" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">25</text>
+<line x1="95" x2="1170" y1="375.0" y2="375.0" stroke="#e3e3e3"/>
+<text x="83" y="382.0" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">50</text>
+<line x1="95" x2="1170" y1="247.5" y2="247.5" stroke="#e3e3e3"/>
+<text x="83" y="254.5" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">75</text>
+<line x1="95" x2="1170" y1="120.0" y2="120.0" stroke="#e3e3e3"/>
+<text x="83" y="127.0" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">100</text>
+<text x="30" y="106" font-size="21" fill="#555555" text-anchor="start" font-weight="normal">Share of decided disputes (%)</text>
+<polyline fill="none" stroke="#d9822b" stroke-width="5" points="129.8,456.1 199.4,468.3 269.0,407.1 338.7,404.1 408.3,446.4 477.9,443.9 547.5,463.7 617.1,483.1 686.7,288.8 756.3,394.9 826.0,349.0 895.6,228.6 965.2,382.6"/>
+<circle cx="129.8" cy="456.1" r="6" fill="#d9822b"/>
+<circle cx="199.4" cy="468.3" r="6" fill="#d9822b"/>
+<circle cx="269.0" cy="407.1" r="6" fill="#d9822b"/>
+<circle cx="338.7" cy="404.1" r="6" fill="#d9822b"/>
+<circle cx="408.3" cy="446.4" r="6" fill="#d9822b"/>
+<circle cx="477.9" cy="443.9" r="6" fill="#d9822b"/>
+<circle cx="547.5" cy="463.7" r="6" fill="#d9822b"/>
+<circle cx="617.1" cy="483.1" r="6" fill="#d9822b"/>
+<circle cx="686.7" cy="288.8" r="6" fill="#d9822b"/>
+<circle cx="756.3" cy="394.9" r="6" fill="#d9822b"/>
+<circle cx="826.0" cy="349.0" r="6" fill="#d9822b"/>
+<circle cx="895.6" cy="228.6" r="6" fill="#d9822b"/>
+<circle cx="965.2" cy="382.6" r="6" fill="#d9822b"/>
+<text x="981.1923076923076" y="389.65" font-size="21" fill="#d9822b" text-anchor="start" font-weight="bold">Overturned</text>
+<polyline fill="none" stroke="#7a4fa3" stroke-width="5" points="129.8,583.6 199.4,594.8 269.0,569.3 338.7,504.5 408.3,557.1 477.9,559.6 547.5,575.9 617.1,582.6 686.7,431.1 756.3,361.7 826.0,370.9 895.6,451.0 965.2,504.0"/>
+<circle cx="129.8" cy="583.6" r="6" fill="#7a4fa3"/>
+<circle cx="199.4" cy="594.8" r="6" fill="#7a4fa3"/>
+<circle cx="269.0" cy="569.3" r="6" fill="#7a4fa3"/>
+<circle cx="338.7" cy="504.5" r="6" fill="#7a4fa3"/>
+<circle cx="408.3" cy="557.1" r="6" fill="#7a4fa3"/>
+<circle cx="477.9" cy="559.6" r="6" fill="#7a4fa3"/>
+<circle cx="547.5" cy="575.9" r="6" fill="#7a4fa3"/>
+<circle cx="617.1" cy="582.6" r="6" fill="#7a4fa3"/>
+<circle cx="686.7" cy="431.1" r="6" fill="#7a4fa3"/>
+<circle cx="756.3" cy="361.7" r="6" fill="#7a4fa3"/>
+<circle cx="826.0" cy="370.9" r="6" fill="#7a4fa3"/>
+<circle cx="895.6" cy="451.0" r="6" fill="#7a4fa3"/>
+<circle cx="965.2" cy="504.0" r="6" fill="#7a4fa3"/>
+<text x="981.1923076923076" y="511.03" font-size="21" fill="#7a4fa3" text-anchor="start" font-weight="bold">Betting lines</text>
+<text x="129.80769230769232" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Nov 25</text>
+<text x="199.4230769230769" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Dec 25</text>
+<text x="269.03846153846155" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Jan 26</text>
+<text x="338.65384615384613" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Feb 26</text>
+<text x="408.2692307692308" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Mar 26</text>
+<text x="477.88461538461536" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Apr 26</text>
+<text x="547.5" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">May 26</text>
+<text x="617.1153846153846" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Jun 26</text>
+<text x="686.7307692307692" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Jul 26</text>
+<text x="756.3461538461538" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Aug 26</text>
+<text x="825.9615384615385" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Sep 26</text>
+<text x="895.5769230769231" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Oct 26</text>
+<text x="965.1923076923076" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Nov 26</text>
+</svg>

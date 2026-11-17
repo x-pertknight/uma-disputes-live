@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" font-family="Helvetica, Arial, sans-serif">
+<rect width="1200" height="720" fill="white"/>
+<text x="30" y="46" font-size="30" fill="#1c1c1c" text-anchor="start" font-weight="bold">Most first disputes end in a reset; most later disputes are upheld</text>
+<text x="30" y="80" font-size="21" fill="#555555" text-anchor="start" font-weight="normal">Outcome of settled disputes over the last 90 days, adapters whose source was read, disputes at least 7 days old</text>
+<text x="245" y="242" font-size="24" fill="#1c1c1c" text-anchor="end" font-weight="normal">Later disputes</text>
+<text x="245" y="272" font-size="19" fill="#555555" text-anchor="end" font-weight="normal">82 settled</text>
+<rect x="260.0" y="190" width="175.5" height="80" fill="#9aa3ad"/>
+<text x="347.75" y="240" font-size="24" fill="white" text-anchor="middle" font-weight="bold">20%</text>
+<rect x="435.5" y="190" width="143.1" height="80" fill="#d9822b"/>
+<text x="507.05" y="240" font-size="24" fill="white" text-anchor="middle" font-weight="bold">16%</text>
+<rect x="578.6" y="190" width="581.4" height="80" fill="#2a6fb0"/>
+<text x="869.3" y="240" font-size="24" fill="white" text-anchor="middle" font-weight="bold">65%</text>
+<text x="245" y="442" font-size="24" fill="#1c1c1c" text-anchor="end" font-weight="normal">First disputes</text>
+<text x="245" y="472" font-size="19" fill="#555555" text-anchor="end" font-weight="normal">1648 settled</text>
+<rect x="260.0" y="390" width="565.2" height="80" fill="#9aa3ad"/>
+<text x="542.6" y="440" font-size="24" fill="white" text-anchor="middle" font-weight="bold">63%</text>
+<rect x="825.2" y="390" width="234.9" height="80" fill="#d9822b"/>
+<text x="942.6500000000001" y="440" font-size="24" fill="white" text-anchor="middle" font-weight="bold">26%</text>
+<rect x="1060.1" y="390" width="99.9" height="80" fill="#2a6fb0"/>
+<text x="1110.0500000000002" y="440" font-size="24" fill="white" text-anchor="middle" font-weight="bold">11%</text>
+<rect x="260" y="630" width="18" height="18" fill="#9aa3ad"/>
+<text x="286" y="646" font-size="21" fill="#1c1c1c" text-anchor="start" font-weight="normal">Reset</text>
+<rect x="380" y="630" width="18" height="18" fill="#d9822b"/>
+<text x="406" y="646" font-size="21" fill="#1c1c1c" text-anchor="start" font-weight="normal">Overturned</text>
+<rect x="560" y="630" width="18" height="18" fill="#2a6fb0"/>
+<text x="586" y="646" font-size="21" fill="#1c1c1c" text-anchor="start" font-weight="normal">Upheld</text>
+</svg>

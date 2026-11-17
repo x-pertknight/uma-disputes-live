@@ -1,0 +1,178 @@
+[
+ {
+  "contract": "OOv2",
+  "event": "ProposePrice",
+  "from_block": 93030341,
+  "to_block": 93070340,
+  "stored": 53,
+  "refetched": 53,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "OOv2",
+  "event": "ProposePrice",
+  "from_block": 94842344,
+  "to_block": 94882343,
+  "stored": 37,
+  "refetched": 37,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "OOv2",
+  "event": "ProposePrice",
+  "from_block": 96654347,
+  "to_block": 96694346,
+  "stored": 39,
+  "refetched": 39,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "OOv2",
+  "event": "ProposePrice",
+  "from_block": 97425742,
+  "to_block": 97465741,
+  "stored": 109,
+  "refetched": 109,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "OOv2",
+  "event": "DisputePrice",
+  "from_block": 81858414,
+  "to_block": 81898413,
+  "stored": 2,
+  "refetched": 2,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "OOv2",
+  "event": "DisputePrice",
+  "from_block": 88270622,
+  "to_block": 88310621,
+  "stored": 0,
+  "refetched": 0,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "OOv2",
+  "event": "DisputePrice",
+  "from_block": 94682830,
+  "to_block": 94722829,
+  "stored": 0,
+  "refetched": 0,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "OOv2",
+  "event": "DisputePrice",
+  "from_block": 97412599,
+  "to_block": 97452598,
+  "stored": 1,
+  "refetched": 1,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "ManagedOOv2",
+  "event": "ProposePrice",
+  "from_block": 93030341,
+  "to_block": 93070340,
+  "stored": 16748,
+  "refetched": 16748,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "ManagedOOv2",
+  "event": "ProposePrice",
+  "from_block": 94842344,
+  "to_block": 94882343,
+  "stored": 15672,
+  "refetched": 15672,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "ManagedOOv2",
+  "event": "ProposePrice",
+  "from_block": 96654347,
+  "to_block": 96694346,
+  "stored": 18579,
+  "refetched": 18579,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "ManagedOOv2",
+  "event": "ProposePrice",
+  "from_block": 97425742,
+  "to_block": 97465741,
+  "stored": 18398,
+  "refetched": 18398,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "ManagedOOv2",
+  "event": "DisputePrice",
+  "from_block": 81858784,
+  "to_block": 81898783,
+  "stored": 5,
+  "refetched": 5,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "ManagedOOv2",
+  "event": "DisputePrice",
+  "from_block": 88270840,
+  "to_block": 88310839,
+  "stored": 4,
+  "refetched": 4,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "ManagedOOv2",
+  "event": "DisputePrice",
+  "from_block": 94682896,
+  "to_block": 94722895,
+  "stored": 8,
+  "refetched": 8,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ },
+ {
+  "contract": "ManagedOOv2",
+  "event": "DisputePrice",
+  "from_block": 97412599,
+  "to_block": 97452598,
+  "stored": 10,
+  "refetched": 10,
+  "only_stored": 0,
+  "only_refetched": 0,
+  "match": true
+ }
+]

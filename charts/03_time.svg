@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" font-family="Helvetica, Arial, sans-serif">
+<rect width="1200" height="720" fill="white"/>
+<text x="30" y="46" font-size="30" fill="#1c1c1c" text-anchor="start" font-weight="bold">The median dispute settled in 73 to 85 hours in every month</text>
+<text x="30" y="80" font-size="21" fill="#555555" text-anchor="start" font-weight="normal">Hours from dispute to settlement, disputes at least 7 days old; only disputes that have settled are included</text>
+<line x1="95" x2="1170" y1="630.0" y2="630.0" stroke="#e3e3e3"/>
+<text x="83" y="637.0" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">0</text>
+<line x1="95" x2="1170" y1="502.5" y2="502.5" stroke="#e3e3e3"/>
+<text x="83" y="509.5" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">50</text>
+<line x1="95" x2="1170" y1="375.0" y2="375.0" stroke="#e3e3e3"/>
+<text x="83" y="382.0" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">100</text>
+<line x1="95" x2="1170" y1="247.5" y2="247.5" stroke="#e3e3e3"/>
+<text x="83" y="254.5" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">150</text>
+<line x1="95" x2="1170" y1="120.0" y2="120.0" stroke="#e3e3e3"/>
+<text x="83" y="127.0" font-size="21" fill="#555555" text-anchor="end" font-weight="normal">200</text>
+<text x="30" y="106" font-size="21" fill="#555555" text-anchor="start" font-weight="normal">Hours</text>
+<polyline fill="none" stroke="#d9822b" stroke-width="5" points="129.8,379.6 199.4,387.8 269.0,381.1 338.7,378.6 408.3,380.6 477.9,379.6 547.5,377.0 617.1,372.2 686.7,380.4 756.3,199.6 826.0,388.8 895.6,377.6 965.2,385.7"/>
+<circle cx="129.8" cy="379.6" r="6" fill="#d9822b"/>
+<circle cx="199.4" cy="387.8" r="6" fill="#d9822b"/>
+<circle cx="269.0" cy="381.1" r="6" fill="#d9822b"/>
+<circle cx="338.7" cy="378.6" r="6" fill="#d9822b"/>
+<circle cx="408.3" cy="380.6" r="6" fill="#d9822b"/>
+<circle cx="477.9" cy="379.6" r="6" fill="#d9822b"/>
+<circle cx="547.5" cy="377.0" r="6" fill="#d9822b"/>
+<circle cx="617.1" cy="372.2" r="6" fill="#d9822b"/>
+<circle cx="686.7" cy="380.4" r="6" fill="#d9822b"/>
+<circle cx="756.3" cy="199.6" r="6" fill="#d9822b"/>
+<circle cx="826.0" cy="388.8" r="6" fill="#d9822b"/>
+<circle cx="895.6" cy="377.6" r="6" fill="#d9822b"/>
+<circle cx="965.2" cy="385.7" r="6" fill="#d9822b"/>
+<text x="981.1923076923076" y="392.71000000000004" font-size="21" fill="#d9822b" text-anchor="start" font-weight="bold">90th percentile</text>
+<polyline fill="none" stroke="#2a6fb0" stroke-width="5" points="129.8,443.9 199.4,442.6 269.0,437.5 338.7,423.2 408.3,417.6 477.9,431.4 547.5,413.2 617.1,423.2 686.7,437.0 756.3,425.0 826.0,430.3 895.6,418.4 965.2,441.3"/>
+<circle cx="129.8" cy="443.9" r="6" fill="#2a6fb0"/>
+<circle cx="199.4" cy="442.6" r="6" fill="#2a6fb0"/>
+<circle cx="269.0" cy="437.5" r="6" fill="#2a6fb0"/>
+<circle cx="338.7" cy="423.2" r="6" fill="#2a6fb0"/>
+<circle cx="408.3" cy="417.6" r="6" fill="#2a6fb0"/>
+<circle cx="477.9" cy="431.4" r="6" fill="#2a6fb0"/>
+<circle cx="547.5" cy="413.2" r="6" fill="#2a6fb0"/>
+<circle cx="617.1" cy="423.2" r="6" fill="#2a6fb0"/>
+<circle cx="686.7" cy="437.0" r="6" fill="#2a6fb0"/>
+<circle cx="756.3" cy="425.0" r="6" fill="#2a6fb0"/>
+<circle cx="826.0" cy="430.3" r="6" fill="#2a6fb0"/>
+<circle cx="895.6" cy="418.4" r="6" fill="#2a6fb0"/>
+<circle cx="965.2" cy="441.3" r="6" fill="#2a6fb0"/>
+<text x="981.1923076923076" y="448.3" font-size="21" fill="#2a6fb0" text-anchor="start" font-weight="bold">Median</text>
+<text x="129.80769230769232" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Nov 25</text>
+<text x="199.4230769230769" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Dec 25</text>
+<text x="269.03846153846155" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Jan 26</text>
+<text x="338.65384615384613" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Feb 26</text>
+<text x="408.2692307692308" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Mar 26</text>
+<text x="477.88461538461536" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Apr 26</text>
+<text x="547.5" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">May 26</text>
+<text x="617.1153846153846" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Jun 26</text>
+<text x="686.7307692307692" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Jul 26</text>
+<text x="756.3461538461538" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Aug 26</text>
+<text x="825.9615384615385" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Sep 26</text>
+<text x="895.5769230769231" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Oct 26</text>
+<text x="965.1923076923076" y="665" font-size="19" fill="#555555" text-anchor="middle" font-weight="normal">Nov 26</text>
+</svg>

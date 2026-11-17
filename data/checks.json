@@ -1,0 +1,24 @@
+{
+ "checks": {
+  "duplicate_proposal_keys": 0,
+  "duplicate_dispute_keys": 0,
+  "settles_without_matching_dispute": 4,
+  "disputes_in_window_without_proposal_row": 2672,
+  "fastest_dispute_to_settle_hours": 53.3
+ },
+ "key_integrity": {
+  "keys_with_2plus_settle_logs": 0,
+  "keys_with_2plus_dispute_logs": 0,
+  "settle_keys": 4455,
+  "dispute_keys": 4626,
+  "disputes_with_a_proposal_row_in_window": 1954,
+  "proposed_price_differs_between_proposal_and_dispute_event": 0
+ },
+ "rerequest": {
+  "disputed_requests": 1954,
+  "followed_by_new_request": 1758,
+  "questions": 3010074,
+  "questions_with_2plus_requests": 1743,
+  "requests": 3011835
+ }
+}

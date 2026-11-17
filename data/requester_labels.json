@@ -1,0 +1,74 @@
+{
+ "0x056e680aae1f3be339e375070b56fcbb326fa297": {
+  "checksum": "0x056E680AAe1F3BE339e375070B56FcbB326fa297",
+  "contract_name": "UmaCtfAdapter",
+  "match": "exact_match",
+  "source": "Sourcify exact_match: src/UmaCtfAdapter.sol:UmaCtfAdapter",
+  "what_it_is": "UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs)"
+ },
+ "0x157ce2d672854c848c9b79c49a8cc6cc89176a49": {
+  "checksum": "0x157Ce2d672854c848c9b79C49a8Cc6cc89176a49",
+  "contract_name": "UmaCtfAdapter",
+  "match": "match",
+  "source": "Sourcify match: src/UmaCtfAdapter.sol:UmaCtfAdapter",
+  "what_it_is": "UmaCtfAdapter v3.1.0 (listed in Polymarket's contract docs)"
+ },
+ "0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d": {
+  "checksum": "0x2F5e3684cb1F318ec51b00Edba38d79Ac2c0aA9d",
+  "contract_name": "UmaCtfAdapter",
+  "match": "exact_match",
+  "source": "Sourcify exact_match: src/UmaCtfAdapter.sol:UmaCtfAdapter",
+  "what_it_is": "UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs)"
+ },
+ "0x47fe3796830d244f180fd9489282b0caf68c390c": {
+  "checksum": "0x47FE3796830d244F180fd9489282B0CAf68C390C",
+  "contract_name": null,
+  "match": null,
+  "error": "HTTP Error 404: Not Found",
+  "source": "not verified on Sourcify",
+  "what_it_is": "source not verified on Sourcify; not listed in Polymarket's docs"
+ },
+ "0x53703dd6129d723066b6362510e5ae2fecd48218": {
+  "checksum": "0x53703Dd6129d723066b6362510E5aE2fECd48218",
+  "contract_name": null,
+  "match": null,
+  "error": "HTTP Error 404: Not Found",
+  "source": "not verified on Sourcify",
+  "what_it_is": "source not verified on Sourcify; not listed in Polymarket's docs"
+ },
+ "0x65070be91477460d8a7aeeb94ef92fe056c2f2a7": {
+  "checksum": "0x65070BE91477460D8A7AeEb94ef92fe056C2f2A7",
+  "contract_name": "UmaCtfAdapter",
+  "match": "exact_match",
+  "source": "Sourcify exact_match: src/UmaCtfAdapter.sol:UmaCtfAdapter",
+  "what_it_is": "UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs)"
+ },
+ "0x69c47de9d4d3dad79590d61b9e05918e03775f24": {
+  "checksum": "0x69c47De9D4D3Dad79590d61b9e05918E03775f24",
+  "contract_name": "UmaCtfAdapter",
+  "match": "exact_match",
+  "source": "Sourcify exact_match: src/UmaCtfAdapter.sol:UmaCtfAdapter",
+  "what_it_is": "UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs)"
+ },
+ "0x6a9d222616c90fca5754cd1333cfd9b7fb6a4f74": {
+  "checksum": "0x6A9D222616C90FcA5754cd1333cFD9b7fb6a4F74",
+  "contract_name": "UmaCtfAdapter",
+  "match": "exact_match",
+  "source": "Sourcify exact_match: src/UmaCtfAdapter.sol:UmaCtfAdapter",
+  "what_it_is": "UmaCtfAdapter v2.0.0 (listed in Polymarket's contract docs)"
+ },
+ "0xa68f6b97f605f22ba6a8420460dafb5b5bc35a20": {
+  "checksum": "0xa68F6B97f605f22ba6A8420460dafB5B5BC35A20",
+  "contract_name": "UmaCrossChainAdapter",
+  "match": "exact_match",
+  "source": "Sourcify exact_match: src/UmaCrossChainAdapter.sol:UmaCrossChainAdapter",
+  "what_it_is": "UmaCrossChainAdapter (Sourcify-verified source name; not in Polymarket's list)"
+ },
+ "0xc3a447e6604f31091d4955659ced9bd344c8e046": {
+  "checksum": "0xc3a447e6604F31091d4955659CED9bd344C8E046",
+  "contract_name": "UmaCtfAdapter",
+  "match": "match",
+  "source": "Sourcify match: UmaCtfAdapter.sol:UmaCtfAdapter",
+  "what_it_is": "UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs)"
+ }
+}

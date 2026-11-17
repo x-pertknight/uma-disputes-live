@@ -1,0 +1,17 @@
+{
+ "ManagedOOv2:DisputePrice": 97470920,
+ "ManagedOOv2:DisputePrice:window_start": 79110761,
+ "ManagedOOv2:ProposePrice": 97470920,
+ "ManagedOOv2:ProposePrice:window_start": 92253769,
+ "ManagedOOv2:Settle": 97470920,
+ "ManagedOOv2:Settle:window_start": 79110761,
+ "OOv2:DisputePrice": 97470920,
+ "OOv2:DisputePrice:window_start": 79110325,
+ "OOv2:ProposePrice": 97470920,
+ "OOv2:ProposePrice:window_start": 92253769,
+ "OOv2:Settle": 97470920,
+ "OOv2:Settle:window_start": 79110325,
+ "dispute_window_start": 79110429,
+ "head_block": 97470920,
+ "head_ts": 1794911849
+}

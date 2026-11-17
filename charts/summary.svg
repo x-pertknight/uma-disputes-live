@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" font-family="Helvetica, Arial, sans-serif">
+<rect width="1080" height="1350" fill="white"/>
+<text x="60" y="110" font-size="62" fill="#1c1c1c" text-anchor="start" font-weight="bold">What happens when a</text>
+<text x="60" y="182" font-size="62" fill="#1c1c1c" text-anchor="start" font-weight="bold">Polymarket result is challenged</text>
+<text x="60" y="236" font-size="28" fill="#555555" text-anchor="start" font-weight="normal">4,423 challenges settled on Polygon, 12 months to November 2026</text>
+<text x="60" y="330" font-size="44" fill="#1c1c1c" text-anchor="start" font-weight="bold">Most end with “ask again”</text>
+<rect x="60.0" y="355" width="518.4" height="110" fill="#9aa3ad"/>
+<text x="319.2" y="425" font-size="50" fill="white" text-anchor="middle" font-weight="bold">54%</text>
+<text x="68" y="505" font-size="27" fill="#4a535c" text-anchor="start" font-weight="bold">too early,</text>
+<text x="68" y="537" font-size="27" fill="#4a535c" text-anchor="start" font-weight="bold">ask again</text>
+<rect x="578.4" y="355" width="211.2" height="110" fill="#d9822b"/>
+<text x="684.0" y="425" font-size="50" fill="white" text-anchor="middle" font-weight="bold">22%</text>
+<text x="586.4" y="505" font-size="27" fill="#d9822b" text-anchor="start" font-weight="bold">changed</text>
+<text x="586.4" y="537" font-size="27" fill="#d9822b" text-anchor="start" font-weight="bold">the answer</text>
+<rect x="789.6" y="355" width="230.4" height="110" fill="#2a6fb0"/>
+<text x="904.8" y="425" font-size="50" fill="white" text-anchor="middle" font-weight="bold">24%</text>
+<text x="797.5999999999999" y="505" font-size="27" fill="#2a6fb0" text-anchor="start" font-weight="bold">confirmed</text>
+<text x="797.5999999999999" y="537" font-size="27" fill="#2a6fb0" text-anchor="start" font-weight="bold">it</text>
+<text x="60" y="650" font-size="44" fill="#1c1c1c" text-anchor="start" font-weight="bold">The first challenge doesn’t decide</text>
+<text x="60" y="760" font-size="96" fill="#4a535c" text-anchor="start" font-weight="bold">9 in 10</text>
+<text x="60" y="808" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">challenges are first ones,</text>
+<text x="60" y="842" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">sent back to be asked again</text>
+<text x="560" y="760" font-size="96" fill="#2a6fb0" text-anchor="start" font-weight="bold">2 in 3</text>
+<text x="560" y="808" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">later challenges</text>
+<text x="560" y="842" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">confirmed the answer</text>
+<text x="60" y="960" font-size="44" fill="#1c1c1c" text-anchor="start" font-weight="bold">The rise after June</text>
+<text x="60" y="1070" font-size="76" fill="#d9822b" text-anchor="start" font-weight="bold">36% → 61%</text>
+<text x="60" y="1118" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">of challenges that got</text>
+<text x="60" y="1152" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">a verdict were overturned</text>
+<text x="560" y="1070" font-size="76" fill="#d9822b" text-anchor="start" font-weight="bold">18% → 26%</text>
+<text x="560" y="1118" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">of all settled</text>
+<text x="560" y="1152" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">challenges were overturned</text>
+<text x="60" y="1215" font-size="32" fill="#1c1c1c" text-anchor="start" font-weight="normal">Betting lines went from 13% to 42% of the cases</text>
+<line x1="60" x2="1020" y1="1262" y2="1262" stroke="#e3e3e3" stroke-width="2"/>
+<text x="60" y="1310" font-size="26" fill="#555555" text-anchor="start" font-weight="normal">Marco Amendola · data and code: github.com/x-pertknight/uma-disputes-live</text>
+</svg>

@@ -1,0 +1,14 @@
+# Full raw logs include proposer/disputer wallet addresses: never publish
+data/raw_local/
+__pycache__/
+*.pyc
+.venv/
+
+# Personal handoff note: not for publication
+STATUS.md
+
+# Earlier versions of the texts: not for publication
+drafts/
+
+# Local preview builder: depends on files outside this repo
+build_preview.py

@@ -1,0 +1,37 @@
+month,requester,what_it_is,disputes,resets,decided,overturned,overturn_pct
+2025-11,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),31,20,11,1,9.1
+2025-11,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),45,12,33,14,42.4
+2025-12,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),72,47,25,7,28.0
+2025-12,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),124,56,68,25,36.8
+2025-12,0x6a9d222616c90fca5754cd1333cfd9b7fb6a4f74,UmaCtfAdapter v2.0.0 (listed in Polymarket's contract docs),6,0,6,0,0.0
+2026-01,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),139,108,31,12,38.7
+2026-01,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),176,79,97,47,48.5
+2026-02,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),92,64,28,6,21.4
+2026-02,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),143,54,89,45,50.6
+2026-03,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),23,11,12,5,41.7
+2026-03,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),241,95,146,56,38.4
+2026-03,0x69c47de9d4d3dad79590d61b9e05918e03775f24,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),98,81,17,2,11.8
+2026-04,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),19,16,3,0,0.0
+2026-04,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),207,49,158,61,38.6
+2026-04,0x69c47de9d4d3dad79590d61b9e05918e03775f24,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),52,24,28,8,28.6
+2026-05,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),12,10,2,0,0.0
+2026-05,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),175,75,100,33,33.0
+2026-05,0x69c47de9d4d3dad79590d61b9e05918e03775f24,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),117,80,37,13,35.1
+2026-06,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),16,13,3,1,33.3
+2026-06,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),166,71,95,21,22.1
+2026-06,0x69c47de9d4d3dad79590d61b9e05918e03775f24,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),78,59,19,12,63.2
+2026-07,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),17,7,10,0,0.0
+2026-07,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),262,134,128,89,69.5
+2026-07,0x69c47de9d4d3dad79590d61b9e05918e03775f24,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),39,23,16,14,87.5
+2026-08,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),373,161,212,96,45.3
+2026-08,0x69c47de9d4d3dad79590d61b9e05918e03775f24,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),49,30,19,10,52.6
+2026-09,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),17,15,2,0,0.0
+2026-09,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),403,199,204,118,57.8
+2026-09,0x69c47de9d4d3dad79590d61b9e05918e03775f24,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),48,18,30,12,40.0
+2026-10,0x056e680aae1f3be339e375070b56fcbb326fa297,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),11,11,0,0,
+2026-10,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),567,330,237,187,78.9
+2026-10,0x69c47de9d4d3dad79590d61b9e05918e03775f24,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),297,254,43,33,76.7
+2026-11,0x2f5e3684cb1f318ec51b00edba38d79ac2c0aa9d,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),17,7,10,0,0.0
+2026-11,0x53703dd6129d723066b6362510e5ae2fecd48218,source not verified on Sourcify; not listed in Polymarket's docs,17,13,4,4,100.0
+2026-11,0x65070be91477460d8a7aeeb94ef92fe056c2f2a7,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),198,121,77,39,50.6
+2026-11,0x69c47de9d4d3dad79590d61b9e05918e03775f24,UmaCtfAdapter (Sourcify-verified source name; version not listed in Polymarket's docs),36,30,6,4,66.7
