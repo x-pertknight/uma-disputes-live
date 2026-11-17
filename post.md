@@ -10,7 +10,7 @@ What the past year shows
 
 The first challenge doesn't decide
 
-On Polymarket, the first challenge to a question sends it back to be asked again, whatever the vote says. Only a later challenge can put the market to the vote. Nine in ten challenges are first ones. Among the later ones, about two in three confirmed the original answer.
+On Polymarket, the first challenge to a question almost always sends it back to be asked again, whatever the vote says. Only a later challenge can put the market to the vote. Nine in ten challenges are first ones. Among the later ones, about two in three confirmed the answer.
 
 The rise after June
 
@@ -18,7 +18,7 @@ Among challenges that got a verdict, 61% overturned the answer after June, up fr
 
 How long it takes
 
-A typical challenge settles in three to three and a half days. The slowest that settled took about 20. Three are still open after more than a week, the oldest since 9 December 2025.
+A typical challenge settles in three to three and a half days. The slowest that settled took about 20. Three still have no settlement after more than a week, the oldest since 9 December 2025.
 
 Limits
 
