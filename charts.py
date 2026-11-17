@@ -204,7 +204,10 @@ def chart_summary():
     for cx, a, b, l1, l2 in [(m, v["verdict_before"], v["verdict_after"], "of challenges that got", "a verdict were overturned"),
                              (m + 500, v["all_before"], v["all_after"], "of all settled", "challenges were overturned")]:
         p += [text(cx, 1070, f"{a}% → {b}%", 76, C_OVER, weight="bold"), text(cx, 1118, l1, 27, INK), text(cx, 1152, l2, 27, INK)]
-    p.append(text(m, 1215, f"Betting lines went from {v['lines_before']}% to {v['lines_after']}% of the cases", 32, INK))
+    # Same size family as the section text, percentages bold in the figure orange
+    p.append(f'<text x="{m}" y="1220" font-size="38" fill="{INK}">Betting lines went from '
+             f'<tspan font-weight="bold" fill="{C_OVER}">{v["lines_before"]}%</tspan> to '
+             f'<tspan font-weight="bold" fill="{C_OVER}">{v["lines_after"]}%</tspan> of the cases</text>')
     p.append(f'<line x1="{m}" x2="{w - m}" y1="1262" y2="1262" stroke="{GRID}" stroke-width="2"/>')
     p.append(text(m, 1310, "Marco Amendola · data and code: github.com/x-pertknight/uma-disputes-live", 26, SOFT))
     p.append("</svg>")

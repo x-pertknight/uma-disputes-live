@@ -30,7 +30,7 @@
 <text x="560" y="1070" font-size="76" fill="#d9822b" text-anchor="start" font-weight="bold">18% → 26%</text>
 <text x="560" y="1118" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">of all settled</text>
 <text x="560" y="1152" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">challenges were overturned</text>
-<text x="60" y="1215" font-size="32" fill="#1c1c1c" text-anchor="start" font-weight="normal">Betting lines went from 13% to 42% of the cases</text>
+<text x="60" y="1220" font-size="38" fill="#1c1c1c">Betting lines went from <tspan font-weight="bold" fill="#d9822b">13%</tspan> to <tspan font-weight="bold" fill="#d9822b">42%</tspan> of the cases</text>
 <line x1="60" x2="1020" y1="1262" y2="1262" stroke="#e3e3e3" stroke-width="2"/>
 <text x="60" y="1310" font-size="26" fill="#555555" text-anchor="start" font-weight="normal">Marco Amendola · data and code: github.com/x-pertknight/uma-disputes-live</text>
 </svg>
