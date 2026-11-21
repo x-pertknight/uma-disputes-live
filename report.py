@@ -240,13 +240,13 @@ def _reconcile_section(ctx):
     p = ctx["pooled"]
     f = lambda x: f'{x["overturned"]} of {x["decided"]} = {x["pct"]}%'
     return ["### How this relates to earlier published figures",
-            "The earlier Dune dashboard reported about 31% overturned among disputes decided on substance over its full history to mid-2026 "
-            "(its definitions text; its saved results have expired, so I did not reproduce it). That history includes months before "
+            "The earlier Dune dashboard reported an overturned share among disputes decided on substance over its full history to mid 2026. "
+            "Its saved results had expired by 17 November 2026, so I did not reproduce that figure and do not quote it here. That history includes months before "
             "November 2025, which are not measured here. Pooled figures from this repo, same definition, matured cohort:", "",
             f'- Nov 2025 to Jun 2026 pooled: {f(p["base"])}',
             f'- 12 months pooled: {f(p["all"])}',
             f'- Jul 2026 onward pooled: {f(p["after"])}', "",
-            "A pooled figure depends on the window, so there is no single number to compare with 31%. The monthly path is in the tables above.", ""]
+            "A pooled figure depends on the window, so there is no single number to compare with the dashboard. The monthly path is in the tables above.", ""]
 
 
 def _monthly_section(ctx):

@@ -135,13 +135,13 @@ With at least 20 decided disputes from July: rate rose by more than 5 points in 
 **Later disputes** (the ones that can decide a market), overturned of decided: 14.5% (35 of 241) before July, 24.2% (24 of 99) from July.
 
 ### How this relates to earlier published figures
-The earlier Dune dashboard reported about 31% overturned among disputes decided on substance over its full history to mid-2026 (its definitions text; its saved results have expired, so I did not reproduce it). That history includes months before November 2025, which are not measured here. Pooled figures from this repo, same definition, matured cohort:
+The earlier Dune dashboard reported an overturned share among disputes decided on substance over its full history to mid 2026. Its saved results had expired by 17 November 2026, so I did not reproduce that figure and do not quote it here. That history includes months before November 2025, which are not measured here. Pooled figures from this repo, same definition, matured cohort:
 
 - Nov 2025 to Jun 2026 pooled: 372 of 1025 = 36.3%
 - 12 months pooled: 981 of 2026 = 48.4%
 - Jul 2026 onward pooled: 609 of 1001 = 60.8%
 
-A pooled figure depends on the window, so there is no single number to compare with 31%. The monthly path is in the tables above.
+A pooled figure depends on the window, so there is no single number to compare with the dashboard. The monthly path is in the tables above.
 
 ### Overturn of decided disputes by month: per request and per event cluster
 Same ratio as *Overturned of decided* above, with resets and unsettled disputes left out. A *cluster* groups disputes on one requester within 10 minutes that share a team or player name in the title. **Cluster rule:** a cluster counts as overturned when MORE than half of its decided requests were overturned, and an exact tie counts as upheld; the next column counts ties as overturned, to show how much the rule matters. The last column links by requester and time only. Matured cohort. Largest gap between the two bases: 2026-08, per request 46.1%, per cluster 67.3%, per cluster with ties as overturned 67.3%. The tie rule moves it 0.0 points; the rest of the gap comes from counting majorities of clusters instead of requests.
@@ -304,8 +304,8 @@ Not answered here; a market maker or index provider would ask them.
 - Payouts on reset outcomes were not checked.
 
 ## Definitions
-Same request definitions as the Dune dashboard ["UMA Oracle, Base Rates vs Anecdotes"](https://dune.com/xpertknight/uma-oracle-base-rates-vs-anecdotes), which stays as the historical reference.
-- Universe: OptimisticOracleV2 and ManagedOptimisticOracleV2 on Polygon. OptimisticOracleV3 is left out because the Dune dashboard found zero disputes on it (not re-tested here).
+Same request definitions as my earlier Dune dashboard "UMA Oracle, Base Rates vs Anecdotes".
+- Universe: OptimisticOracleV2 and ManagedOptimisticOracleV2 on Polygon. OptimisticOracleV3 is left out, as in the earlier Dune dashboard (not tested here).
 - A request is keyed by (requester, identifier, timestamp, ancillaryData). **All rates are per request, not per market.**
 - Dispute rate = disputed requests / proposed requests. It is not a rate of wrong proposals.
 - Settled dispute = a `Settle` log exists. Reset = settled at "too early" (min int256). Decided = settled and not reset.
@@ -316,7 +316,7 @@ Same request definitions as the Dune dashboard ["UMA Oracle, Base Rates vs Anecd
 - Market type: assigned from question text by fixed rules in `markets.py` (documented at the top of that file, never from outcomes).
 
 ## Why the dispute rate here is lower than on the earlier dashboard
-Proposal volume grew a great deal while disputes did not grow in step. That is the earlier dashboard's own reading; its chart title reads "volume up ~500x, dispute rate down ~20x". The requester split table above is one 90-day window: it is consistent with that reading (the contract that carries most proposals has a dispute rate far below the small contracts), but it cannot show growth over time, and growth over time is not measured here. I did not reproduce the earlier dashboard's lifetime figure.
+Proposal volume grew a great deal while disputes did not grow in step. That is the earlier dashboard's own reading, from its chart titles; its figures are not reproduced here. The requester split table above is one 90-day window: it is consistent with that reading (the contract that carries most proposals has a dispute rate far below the small contracts), but it cannot show growth over time, and growth over time is not measured here. I did not reproduce the earlier dashboard's lifetime figure.
 
 ## Reading these numbers
 - **Per request, not per market.** A dispute often triggers a re-ask (see "Re-requests" above), and one market can appear as several requests.
@@ -334,7 +334,7 @@ Proposal volume grew a great deal while disputes did not grow in step. That is t
 ## Validation
 **Dune comparison: not possible.** The dashboard's saved results have expired and the Dune account cannot run queries.
 **Second-source sample (decoding only).** 25 disputed requests were drawn with a fixed seed, **stratified** 10 overturned, 10 upheld, 5 resets (not a random sample of all disputes). For each, the proposed price, the resolved price and the settled flag were read from the oracle contract's own `getRequest` state, and the transaction block, log position and block timestamp through Foundry's `cast`. This checks that the log decoding is right. It is not an independent check of the data: it uses the same public RPC provider, the same contract and the same chain (`data/second_source_sample.csv`, `python3 second_source.py`). The result is in Data checks above.
-Also checked: log completeness by re-querying sample windows with different chunk boundaries (`verify.py`, `data/verification.json`). Not tested: the zero-disputes claim for OptimisticOracleV3.
+Also checked: log completeness by re-querying sample windows with different chunk boundaries (`verify.py`, `data/verification.json`). Not tested: disputes on OptimisticOracleV3.
 
 ## Contracts
 - OptimisticOracleV2: `0xee3afe347d5c74317041e2618c49534daf887c24` (UMA `networks/137.json`)
@@ -354,3 +354,7 @@ All endpoints are free, public and keyless. Hostnames used for the data in this 
 - `polygon.gateway.tenderly.co` (default; accepts 25,000-block ranges, caps results at 20,000 logs, and rate-limits heavy use with HTTP 429)
 - `rpc-mainnet.matic.quiknode.pro` (use `UMA_STEP=10000`)
 - `polygon-bor-rpc.publicnode.com` (block-range cap fell from 1,000 to 10 blocks under load, so unsuitable for bulk pulls)
+
+## License
+
+Code is MIT licensed. Text and data are CC BY 4.0.
