@@ -76,7 +76,7 @@ dispute rate may differ from OOv2's. Disputing stays permissionless.
 | Overturn rate among decided disputes | Not published. Small counts, so wide error. |
 | Time from dispute to `Settle` | Docs give the vote schedule, not the delay to the settle transaction. Someone must call `settle`. |
 | Disputes open now | Needs live logs. |
-| Volume of proposals per 90 days | Brief says "over a million lifetime"; the recent rate is unknown. |
+| Volume of proposals per 90 days | I assumed "over a million lifetime"; the recent rate is unknown. |
 | Whether RPC returns complete ranges | Provider behaviour, not UMA's. Checked by overlapping re-queries. |
 | Whether the Dune dashboard's definitions match mine | Compared on two past months at validation. |
 
