@@ -1,10 +1,14 @@
 """Rebuild the first README table (outcome of settled disputes) from data/outcome_shares_by_month.csv and compare.
 
-Also checks the figures of the summary at the top of the README against the 12 month row.
+Also checks the figures of the summary at the top of the README against the 12 month row, and the
+'as of block' phrase in README.md and SCORECARD.md against data/state.json.
 Offline, standard library only. Exits 1 on any mismatch.   python3 -I check_readme.py
 """
 import csv
+import datetime as dt
+import json
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -30,6 +34,23 @@ def readme_rows(lines):
     return rows
 
 
+def check_as_of():
+    """README.md and SCORECARD.md each hold one 'as of block N (D Month YYYY HH:MM UTC)' phrase,
+    and it must equal data/state.json. Built independently of report.write_as_of on purpose."""
+    state = json.load(open(os.path.join(HERE, "data", "state.json")))
+    d = dt.datetime.fromtimestamp(state["head_ts"], dt.timezone.utc)
+    months = ("January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December")
+    want = f"as of block {state['head_block']:,} ({d.day} {months[d.month - 1]} {d.year} {d:%H:%M} UTC)"
+    fails = 0
+    for name in ("README.md", "SCORECARD.md"):
+        found = re.findall(r"as of block [^)]*\)", open(os.path.join(HERE, name)).read())
+        ok = found == [want]
+        fails += not ok
+        print(f"{'PASS' if ok else 'FAIL'}  {name} says '{want}' (found {found})")
+    return fails
+
+
 def main():
     lines = open(os.path.join(HERE, "README.md")).read().splitlines()
     want, got = expected_rows(), readme_rows(lines)
@@ -46,6 +67,7 @@ def main():
         ok = v in top
         fails += not ok
         print(f"{'PASS' if ok else 'FAIL'}  summary at the top quotes {v}")
+    fails += check_as_of()
     print("All README checks passed." if not fails else f"{fails} README checks failed.")
     return 1 if fails else 0
 

@@ -375,6 +375,30 @@ def write_readme(block, path="README.md"):
     open(path, "w").write(src[:i] + "\n" + block + "\n" + src[j:])
 
 
+# "as of block 97,470,920 (17 November 2026 10:37 UTC)"; check_readme.py checks the same pattern.
+AS_OF = re.compile(r"as of block [\d,]+ \(\d{1,2} [A-Z][a-z]+ \d{4} \d{2}:\d{2} UTC\)")
+MONTHS = ("January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December")  # fixed names, independent of locale
+
+
+def write_as_of(head_block, head_ts, paths=("README.md", "SCORECARD.md")):
+    """Rewrite the one 'as of block N (D Month YYYY HH:MM UTC)' phrase in each file from the
+    data head (data/state.json head_block, head_ts). Fails if a file does not hold exactly one."""
+    d = dt.datetime.fromtimestamp(head_ts, dt.timezone.utc)
+    phrase = f"as of block {head_block:,} ({d.day} {MONTHS[d.month - 1]} {d.year} {d:%H:%M} UTC)"
+    out = {}
+    for path in paths:  # check every file before writing any, so a failure leaves none half updated
+        text = open(path).read()
+        new, n = AS_OF.subn(phrase, text)
+        if n != 1:
+            raise SystemExit(f"{path}: expected exactly one 'as of block' phrase, found {n}")
+        if new != text:
+            out[path] = new
+    for path, new in out.items():
+        open(path, "w").write(new)
+    return phrase
+
+
 # ---- SCORECARD figures, regenerated from the same ctx as the README ----------------
 
 RANGES = {"P3": (0.05, 0.40), "P1": (10000, 60000), "P2": (30000, 180000), "P4": (0.05, 0.40), "P5": (8, 150), "P6": (20, 70), "P7": (30, 65),

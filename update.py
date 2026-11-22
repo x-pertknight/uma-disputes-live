@@ -145,6 +145,7 @@ def write_outputs(ctx):
     report.chart_svg(ctx["daily"], "docs/disputes_per_day.svg")
     report.write_readme(report.numbers_block(ctx))
     report.write_scorecard(ctx)
+    report.write_as_of(ctx["head_block"], ctx["head_ts"])
 
 
 def main():
