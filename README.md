@@ -1,9 +1,11 @@
 # UMA optimistic oracle disputes on Polygon: monitor, rebuilt on each run
 
+Of the 4,423 disputes settled in the 12 months to 17 November 2026, the UMA vote said "too early" in 54.2%, overturned the proposal in 22.2% and upheld it in 23.6%. A dispute rate is not an error rate: disputers choose which proposals to challenge, and on Polymarket's adapters the vote on a first dispute does not decide the market.
+
 What happens to price requests that get disputed on UMA's OptimisticOracleV2 and ManagedOptimisticOracleV2 on Polygon,
 rebuilt from public RPC logs. It is not a live feed: `python3 update.py` re-fetches the logs and rewrites every number
 between the markers below, and stamps the time of the last run. Interpretation sentences that contain numbers are generated
-from the tables in the same run; the static text outside the markers contains no refreshed figures.
+from the tables in the same run; the static text outside the markers contains no refreshed figures (the summary above is dated).
 
 <!-- NUMBERS:START -->
 Rebuilt: **2026-11-17 10:46 UTC** by `update.py` (a manual run, not a live feed). Last block: **97470920** (2026-11-17 10:37 UTC). Proposals: last 90 days. Disputes and settlements: last 365 days. Source: Polygon logs via a public RPC. All rates are per request, not per market. Monthly tables use disputes at least 7 days old.
@@ -335,6 +337,14 @@ Proposal volume grew a great deal while disputes did not grow in step. That is t
 **Dune comparison: not possible.** The dashboard's saved results have expired and the Dune account cannot run queries.
 **Second-source sample (decoding only).** 25 disputed requests were drawn with a fixed seed, **stratified** 10 overturned, 10 upheld, 5 resets (not a random sample of all disputes). For each, the proposed price, the resolved price and the settled flag were read from the oracle contract's own `getRequest` state, and the transaction block, log position and block timestamp through Foundry's `cast`. This checks that the log decoding is right. It is not an independent check of the data: it uses the same public RPC provider, the same contract and the same chain (`data/second_source_sample.csv`, `python3 second_source.py`). The result is in Data checks above.
 Also checked: log completeness by re-querying sample windows with different chunk boundaries (`verify.py`, `data/verification.json`). Not tested: disputes on OptimisticOracleV3.
+
+## Reproduce
+
+[![reproduce](https://github.com/x-pertknight/uma-disputes-live/actions/workflows/reproduce.yml/badge.svg)](https://github.com/x-pertknight/uma-disputes-live/actions/workflows/reproduce.yml)
+
+`./reproduce.sh` runs offline with standard library Python, and CI runs it on every push. It checks the data files against `data/SHA256SUMS`, compiles every module, rebuilds the five SVG charts from `data/` and compares them byte for byte with the committed ones, and rebuilds the first README table and the summary at the top from `data/outcome_shares_by_month.csv` (`check_readme.py`). It does not refetch logs: `python3 update.py` needs a public RPC and the raw logs in `data/raw_local/`, which are not published because they carry proposer and disputer wallets.
+
+Preregistration: `PREDICTIONS.md` and `PREDICTIONS_ADDENDUM.md` are dated 16 Nov 2026, before any log was pulled. No hash was recorded, and they entered git in the same commit as the data (95589b8), so the order rests on the recorded dates only, not on a hash or on git order.
 
 ## Contracts
 - OptimisticOracleV2: `0xee3afe347d5c74317041e2618c49534daf887c24` (UMA `networks/137.json`)

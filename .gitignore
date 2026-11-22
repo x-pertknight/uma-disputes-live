@@ -4,7 +4,6 @@ __pycache__/
 *.pyc
 .venv/
 
-# Personal handoff note: not for publication
 STATUS.md
 
 # Earlier versions of the texts: not for publication
