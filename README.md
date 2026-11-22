@@ -344,16 +344,16 @@ Also checked: log completeness by re-querying sample windows with different chun
 
 `./reproduce.sh` runs offline with standard library Python, and CI runs it on every push. It checks the data files against `data/SHA256SUMS`, compiles every module, rebuilds the five SVG charts from `data/` and compares them byte for byte with the committed ones, and rebuilds the first README table and the summary at the top from `data/outcome_shares_by_month.csv` (`check_readme.py`). It does not refetch logs: `python3 update.py` needs a public RPC and the raw logs in `data/raw_local/`, which are not published because they carry proposer and disputer wallets.
 
-Preregistration: `PREDICTIONS.md` and `PREDICTIONS_ADDENDUM.md` are dated 16 Nov 2026, a date before any log was pulled. No hash was recorded, and they entered git in the same commit as the data (95589b8), so the order rests on the recorded dates only, not on a hash or on git order.
+Prediction dates: `PREDICTIONS.md` and `PREDICTIONS_ADDENDUM.md` are dated 16 Nov 2026, and the data files run to block 97,470,920 (2026-11-17 10:37 UTC). No hash was recorded, and they entered git in the same commit as the data (95589b8), so the order rests on the recorded dates only, not on a hash or on git order.
 
-The Dune dashboard linked from `PREDICTIONS.md` is not publicly visible to a logged out visitor.
+The Dune dashboard linked from `PREDICTIONS.md` is not publicly visible to a logged out visitor, as read on 21 Nov 2026.
 
 ## Contracts
 - OptimisticOracleV2: `0xee3afe347d5c74317041e2618c49534daf887c24` (UMA `networks/137.json`)
 - ManagedOptimisticOracleV2 proxy: `0x2C0367a9DB231dDeBd88a94b4f6461a6e47C58B1` (UMA docs, UMIP-189)
 
 ## Method and limits
-See `DOCS_FIRST.md` (documented vs measured), `PREDICTIONS.md` (written before any data was pulled) and `SCORECARD.md`.
+See `DOCS_FIRST.md` (documented vs measured), `PREDICTIONS.md` (dated 16 Nov 2026, no hash recorded) and `SCORECARD.md`.
 Adapter logic: `adapter_check.py` reads the verified `UmaCtfAdapter` source from Sourcify and writes `data/adapter_reset_logic.json`.
 No wallet addresses appear in any published file. Full raw logs, which carry proposer and disputer wallets, stay in `data/raw_local/` (git-ignored); every figure here can be re-fetched from the public logs.
 

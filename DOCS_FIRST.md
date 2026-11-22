@@ -1,6 +1,6 @@
 # DOCS_FIRST: what UMA documents vs what this study must measure
 
-Read on 16 Nov 2026, before any log was fetched. Local copies of every page were
+Read on 16 Nov 2026. Local copies of every page were
 saved outside the repo during reading. Facts marked **[source-code]** come from the
 contract source on GitHub, not from the prose docs.
 

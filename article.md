@@ -42,4 +42,4 @@ That is not a worst case. Three disputes older than a week have no settlement on
 
 Disputers choose their cases and post a bond, so the figures show how often disputers prevail. They are not the share of proposals that are wrong, and undisputed wrong proposals are not in the data. Counts are of requests, not markets. The adapter logic is read from source, not traced on chain. Question types come from keyword rules, and some cells are small. The meaning of a settlement at the midpoint between two outcomes was not tested.
 
-13 numeric predictions were written before any data was pulled. Five held and eight did not. The largest miss was resets: at most 15% of settled disputes were predicted to end that way, and more than half did.
+13 numeric predictions are dated 16 Nov 2026, with no hash recorded. Five held and eight did not. The largest miss was resets: at most 15% of settled disputes were predicted to end that way, and more than half did.
