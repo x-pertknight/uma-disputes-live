@@ -52,7 +52,7 @@ is also outside the stated universe.
 **Open point on the managed address.** It is *not* in `networks/137.json` and not on
 the docs "Network addresses" page. It is confirmed by three UMA-owned places (docs
 page, UMIP-189, managed-oracle repo), so I take it as official, but it is not in the
-single list the brief names. Before the pull I will check that both addresses have
+single address list I set out to use. Before the pull I will check that both addresses have
 contract code and that the first returned log matches the event topic.
 
 ### 1.4 UMIP that introduced the managed oracle

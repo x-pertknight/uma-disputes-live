@@ -30,7 +30,7 @@ not on a hash or on git order. They are unchanged. Measured values come from `da
 Score: 5 of 13 numeric predictions hit, 8 missed. Structural: 4 pass, 1 unverified.
 
 ## What the misses say
-- **Scale (P1, P2, P5, P10, P11).** I anchored on "over a million lifetime" from the brief
+- **Scale (P1, P2, P5, P10, P11).** I anchored on a starting assumption of "over a million lifetime"
   and on typical monthly volume. Actual 90-day volume is in the table above, and it is
   rising. One requester contract carries most proposals (README, requester split).
 - **Resets (P12).** I treated "too early" as a rare edge case. It is the most common
