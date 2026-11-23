@@ -21,7 +21,10 @@ for f in charts/*.svg; do
   echo "same $f"
 done
 
-echo "== 4. README tables match data/"
+echo "== 4. tables rebuilt from data/disputes.csv match the committed ones"
+python3 -I -B recompute_tables.py
+
+echo "== 5. README tables match data/"
 python3 -I -B check_readme.py
 
 echo "All checks passed."
