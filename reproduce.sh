@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-echo "== 0. every required data file is present, non empty and listed in data/SHA256SUMS"
+echo "== 0. every required data file is present, non empty and has a hash line in data/SHA256SUMS"
 # Kept here, not derived from SHA256SUMS, so a file removed together with its SHA256SUMS line fails.
 required="
   adapter_reset_logic.json
@@ -35,7 +35,13 @@ required="
 missing=0
 for f in $required; do
   if [ ! -s "data/$f" ]; then echo "MISSING data/$f"; missing=1
-  elif ! awk -v f="$f" '$2 == f { found = 1 } END { exit !found }' data/SHA256SUMS; then echo "NOT IN SHA256SUMS data/$f"; missing=1; fi
+  elif ! awk -v f="$f" '$2 == f && $1 ~ /^[0-9a-f]+$/ && length($1) == 64 { found = 1 } END { exit !found }' data/SHA256SUMS; then echo "NOT IN SHA256SUMS data/$f"; missing=1; fi
+done
+# The reverse direction: a data file that is not in the list means the list is out of date.
+for p in data/*; do
+  f="${p#data/}"
+  [ "$f" = SHA256SUMS ] && continue
+  case " $(echo $required) " in *" $f "*) ;; *) echo "NOT IN THE REQUIRED LIST data/$f"; missing=1;; esac
 done
 [ "$missing" = 0 ] || exit 1
 echo "all $(echo $required | wc -w | tr -d ' ') required files present"
