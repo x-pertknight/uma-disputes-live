@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-echo "== 0. every required data file is present, non empty and has a hash line in data/SHA256SUMS"
+echo "== 0. every required data file is present, non empty and matches its line in data/SHA256SUMS"
 # Kept here, not derived from SHA256SUMS, so a file removed together with its SHA256SUMS line fails.
 required="
   adapter_reset_logic.json
@@ -32,19 +32,38 @@ required="
   time_to_settle_by_month.csv
   verification.json
 "
-missing=0
-for f in $required; do
-  if [ ! -s "data/$f" ]; then echo "MISSING data/$f"; missing=1
-  elif ! awk -v f="$f" '$2 == f && $1 ~ /^[0-9a-f]+$/ && length($1) == 64 { found = 1 } END { exit !found }' data/SHA256SUMS; then echo "NOT IN SHA256SUMS data/$f"; missing=1; fi
-done
-# The reverse direction: a data file that is not in the list means the list is out of date.
-for p in data/*; do
-  f="${p#data/}"
-  [ "$f" = SHA256SUMS ] && continue
-  case " $(echo $required) " in *" $f "*) ;; *) echo "NOT IN THE REQUIRED LIST data/$f"; missing=1;; esac
-done
-[ "$missing" = 0 ] || exit 1
-echo "all $(echo $required | wc -w | tr -d ' ') required files present"
+# Python does the matching so the layout is exact: one "<64 hex>  <name>" line per file, and
+# the hash is recomputed here, whatever sha256sum or shasum make of a malformed line in step 1.
+REQUIRED="$required" python3 -I -B - <<'PY'
+import hashlib, os, re, sys
+required = os.environ["REQUIRED"].split()
+bad = []
+hashes = {}
+with open("data/SHA256SUMS", "rb") as fh:
+    for n, raw in enumerate(fh, 1):
+        line = raw.decode("utf-8", "replace").rstrip("\n")
+        m = re.fullmatch(r"([0-9a-f]{64})  (\S.*)", line)
+        if not m:
+            bad.append("data/SHA256SUMS line %d is malformed: %r" % (n, line))
+        elif m.group(2) in hashes:
+            bad.append("data/SHA256SUMS line %d repeats %s" % (n, m.group(2)))
+        else:
+            hashes[m.group(2)] = m.group(1)
+for f in required:
+    path = os.path.join("data", f)
+    if not os.path.isfile(path) or os.path.getsize(path) == 0:
+        bad.append("MISSING data/" + f)
+    elif f not in hashes:
+        bad.append("NOT IN SHA256SUMS data/" + f)
+    elif hashlib.sha256(open(path, "rb").read()).hexdigest() != hashes[f]:
+        bad.append("HASH MISMATCH data/" + f)
+# The reverse direction, hidden files included: a data file not in the list means the list is out of date.
+for f in sorted(os.listdir("data")):
+    if f != "SHA256SUMS" and f not in required:
+        bad.append("NOT IN THE REQUIRED LIST data/" + f)
+print("\n".join(bad) if bad else "all %d required files present and matching" % len(required))
+sys.exit(1 if bad else 0)
+PY
 
 echo "== 1. data files match data/SHA256SUMS"
 (cd data && sha256sum -c --quiet SHA256SUMS 2>/dev/null || shasum -a 256 -c --quiet SHA256SUMS)
