@@ -1,7 +1,7 @@
 """Rebuild the published tables from data/disputes.csv and compare them with the committed CSVs.
 
-Offline, standard library only. Reads data/disputes.csv, data/block_times.csv, data/state.json,
-data/adapter_reset_logic.json and data/requester_labels.json, rebuilds each table below with the
+Offline, standard library only. Reads data/disputes.csv, data/block_times.csv, data/state.json
+and data/requester_labels.json, rebuilds each table below with the
 same functions update.py uses, and compares the result byte for byte with data/<table>.csv.
 Exits 1 on any difference.   python3 -I -B recompute_tables.py
 
