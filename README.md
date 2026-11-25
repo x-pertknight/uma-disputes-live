@@ -334,7 +334,7 @@ Proposal volume grew a great deal while disputes did not grow in step. That is t
 - Question text in `data/disputes.csv` and `data/open_disputes.csv` is verbatim from the request, with 40-character hex strings replaced by `[address]`. Titles can name real people, companies and products. The README tables show market type and league instead.
 
 ## Validation
-**Dune comparison: not possible.** The dashboard's saved results have expired and the Dune account cannot run queries.
+**Dune comparison: not possible when this was built.** The dashboard's saved results had expired and the Dune account could not run queries. Update: the dashboard was rerun on 22 November 2026 and is public; the comparison has not been redone here.
 **Second-source sample (decoding only).** 25 disputed requests were drawn with a fixed seed, **stratified** 10 overturned, 10 upheld, 5 resets (not a random sample of all disputes). For each, the proposed price, the resolved price and the settled flag were read from the oracle contract's own `getRequest` state, and the transaction block, log position and block timestamp through Foundry's `cast`. This checks that the log decoding is right. It is not an independent check of the data: it uses the same public RPC provider, the same contract and the same chain (`data/second_source_sample.csv`, `python3 second_source.py`). The result is in Data checks above.
 Also checked: log completeness by re-querying sample windows with different chunk boundaries (`verify.py`, `data/verification.json`). Not tested: disputes on OptimisticOracleV3.
 
@@ -346,7 +346,7 @@ Also checked: log completeness by re-querying sample windows with different chun
 
 Prediction dates: `PREDICTIONS.md` and `PREDICTIONS_ADDENDUM.md` are dated 16 Nov 2026; the data files are as of block 97,470,920 (17 November 2026 10:37 UTC). No hash was recorded, and they entered git in the same commit as the data (95589b8), so the order rests on the recorded dates only, not on a hash or on git order.
 
-The Dune dashboard linked from `PREDICTIONS.md` is not publicly visible to a logged out visitor, as read on 21 Nov 2026.
+The Dune dashboard linked from `PREDICTIONS.md` was not publicly visible to a logged out visitor, as read on 21 Nov 2026. It was rerun and is public as of 22 Nov 2026.
 
 ## Contracts
 - OptimisticOracleV2: `0xee3afe347d5c74317041e2618c49534daf887c24` (UMA `networks/137.json`)
